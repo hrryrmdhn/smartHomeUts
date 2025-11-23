@@ -19,13 +19,13 @@ class DeviceSeeder extends Seeder
             'termostat',
             'garasi',
             'jetpam',
-            'kulkas',
+            'kulkas'
         ];
 
         foreach($devices as $d){
             Device::create([
                 'label' => $d,
-                'state' => 0,
+                'state' => 0
             ]);
         }
     }

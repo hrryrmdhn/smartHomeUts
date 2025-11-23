@@ -7,7 +7,7 @@ use App\Models\Device;
 
 class ApiDeviceController extends Controller
 {
-    public function devices(){
+    public function index(){
         return response()->json(Device::select('id', 'label', 'state')->get());
     }
 }
